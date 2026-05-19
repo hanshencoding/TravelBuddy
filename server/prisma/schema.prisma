@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model User{
+  id Int @id @default(autoincrement())
+  username String
+  email String @unique
+  password String 
+  aboutMe String? 
+  languages String?
+  hobbies String?
+  travelStyle String?
+  budget Int?
+  sleepSchedule String?
+  eatPreference String?
+  profilePicture String @default("default-profile.png")
+  created_at DateTime @default(now())
+  rating Float @default(5.0)
+  notification    Notification[]
+}
+
+model Notification{
+  id Int @id @default(autoincrement())
+  user_id Int
+  title String 
+  message String
+  is_read Boolean @default(false)
+  created_at DateTime @default(now())
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+}
