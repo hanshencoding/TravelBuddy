@@ -1,0 +1,40 @@
+#navbar-components{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 1%;
+   
+}
+
+.brand{
+    color: #6b8e6f;
+    font: 10px;
+}
+
+.move-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-href{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.btn-href:hover{
+    background-color: rgb(107 142 111 / 20%);
+    cursor: pointer;
+}
+
+.btn-href.active {
+    background-color: #6b8e6f; 
+    color: white; 
+}
