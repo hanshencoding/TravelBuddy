@@ -6,7 +6,7 @@ const API = axios.create({
 });
 
 export const userAPI = {
-    
+     
   getProfile: async (id: number) => {
     const response = await API.get(`/user/profile/${id}`);
     return response.data;

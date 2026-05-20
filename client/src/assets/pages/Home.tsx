@@ -6,10 +6,10 @@ function HomePage(){
     const testAmbilProfil = async (): Promise<void> => {
     try {
       console.log("Mulai nembak lewat services/api.ts...");
-      const data = await userAPI.getProfile(1);
-      console.log("Data sukses dapet dari NestJS, Shen! :", data);
+      const data = await userAPI.getProfile(2);
+      console.log(data);
     } catch (error: any) {
-      console.log("Pesan Eror Ketangkep di React:", error.response?.data?.message || error.message);
+      console.log("Error");
     }
   };
 
