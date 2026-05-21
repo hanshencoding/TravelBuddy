@@ -46,4 +46,27 @@ export class UserService {
         return result;
     }
 
+    async loginUser(dataDariReact : any){
+        const email = (dataDariReact?.email || '').trim();
+        const password = (dataDariReact?.password || '').trim();
+
+        const user = await this.prisma.user.findUnique({
+            where : {email : email},
+        });
+
+        if(!user){
+            throw new BadRequestException("Belum Terdaftar");
+        }
+        if(user.password !== password){
+            throw new BadRequestException("Password salah");
+        }
+
+        return {
+            id : user.id,
+            userName : user.username,
+            userAvatar : user.profilePicture,
+
+        };
+    }
+
 }

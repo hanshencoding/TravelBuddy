@@ -17,8 +17,8 @@ function RegisterPage(){
         <div id = "login-register-page">
             <div className="login-register-container">
                 <div className="title-register-container">
-                    <p className="brand-1"><strong>Travel</strong></p>
-                    <p className="brand-2"><strong>Buddy</strong></p>
+                    <p className="brand-1-login"><strong>Travel</strong></p>
+                    <p className="brand-2-login"><strong>Buddy</strong></p>
                 </div>
                 <form onSubmit={handleSubmit} className="form-login-register">
                     <input type="text" placeholder="Masukkan Username" value={username} onChange={(e) => setUserName(e.target.value)} required/>

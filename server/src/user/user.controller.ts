@@ -11,4 +11,10 @@ export class UserController {
             const newUser = await this.userService.createUser(dataDariReact);
             return newUser;
         }
+
+        @Post('signin')
+        async signIn(@Body() dataDariReact : any){
+            const user = await this.userService.loginUser(dataDariReact);
+            return user;
+        }
 }

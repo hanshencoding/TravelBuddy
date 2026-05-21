@@ -5,6 +5,7 @@ import Trip from '../pages/trip'
 import Itinerary from '../pages/itinerary'
 import Buddy from '../pages/buddy'
 import Register from '../pages/register'
+import Login from '../pages/login'
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path : "/register",
         element : <Register></Register>
+    },
+    {
+        path : "/login",
+        element : <Login></Login>
     }
 ]);
 export default router;

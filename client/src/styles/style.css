@@ -50,3 +50,13 @@ body{
     border-radius: 5px;
     outline: none;
 }
+
+.brand-1-login{
+    color: #6b8e6f;
+    font: 20px;
+}
+
+.brand-2-login{
+    color: darkgoldenrod;
+    font: 20px;
+}
