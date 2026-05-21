@@ -5,11 +5,16 @@
     align-items: center;
     color: black;
     padding: 1%;
-   
+   height: 20px;
 }
 
-.brand{
+.brand-1{
     color: #6b8e6f;
+    font: 10px;
+}
+
+.brand-2{
+    color: darkgoldenrod;
     font: 10px;
 }
 
@@ -30,11 +35,77 @@
 }
 
 .btn-href:hover{
-    background-color: rgb(107 142 111 / 20%);
+    background-color: rgb(107 142 111 / 40%);
     cursor: pointer;
 }
 
 .btn-href.active {
     background-color: #6b8e6f; 
     color: white; 
+}
+
+.logo{
+    width : 80px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.auth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-logged-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.notification-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-notification{
+    width: 32px;  
+    height: 32px;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.btn-notification:hover{
+    cursor: pointer;
+    background-color: rgb(107 142 111 / 40%);
+}
+
+.bell-image{
+    width: 20px;
+    object-fit: contain;
+}
+
+.user-logged-out{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-login{
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.btn-login:hover{
+    cursor: pointer;
+    background-color: #6b8e6f;
+    color: white;
 }
