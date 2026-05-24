@@ -6,9 +6,9 @@ function tripPage(){
             <header>
                 <Navbar></Navbar>
             </header>
-            <body>
+            <div>
                 
-            </body>
+            </div>
         </div>
     )
 }

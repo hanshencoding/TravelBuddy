@@ -6,9 +6,9 @@ function buddyPage(){
             <header>
                 <Navbar></Navbar>
             </header>
-            <body>
+            <div>
                 
-            </body>
+            </div>
         </div>
     )
 }

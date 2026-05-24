@@ -19,7 +19,7 @@ export function useLogin(){
             alert('login Success');
             navigate("/");
 
-        }catch(error){
+        }catch(error : any){
             console.error('Login gagal:', error);
         }
     };

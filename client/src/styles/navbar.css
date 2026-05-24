@@ -5,24 +5,24 @@
     align-items: center;
     color: black;
     padding: 1% 10%;
-    height: 20px;
+    height: 50px;
 }
 
 .brand-1{
     color: #6b8e6f;
-    font: 10px;
+    font-size: 30px;
 }
 
 .brand-2{
     color: darkgoldenrod;
-    font: 10px;
+    font-size: 30px;
 }
 
 .move-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 }
 
 .btn-href{
@@ -31,7 +31,7 @@
     color: grey;
     border-radius: 8px;
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .btn-href:hover{
@@ -45,7 +45,7 @@
 }
 
 .logo{
-    width : 80px;
+    width : 180px;
     object-fit: contain;
     margin-top: 10px;
 }
@@ -70,14 +70,14 @@
 }
 
 .btn-notification{
-    width: 32px;  
-    height: 32px;
+    width: 60px;  
+    height: 60px;
     background: transparent;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 80px;
 }
 
 .btn-notification:hover{
@@ -86,7 +86,7 @@
 }
 
 .bell-image{
-    width: 20px;
+    width: 40px;
     object-fit: contain;
 }
 
@@ -100,13 +100,14 @@
     text-decoration: none;
     color: black;
     border-radius: 8px;
-    font-size: 12px;
+    font-size: 25px;
     padding: 5px 10px;
+    border-radius: 20px;
 }
 
 .btn-login:hover{
     cursor: pointer;
-    background-color: #6b8e6f;
+    background-color: burlywood;
     color: white;
 }
 
@@ -119,18 +120,18 @@
 
 .account-name{
     color: black;
-    font-size: 12px;
+    font-size: 25px;
 }
 
 .btn-profile{
-    width: 32px;  
-    height: 32px;
+    width: 60px;  
+    height: 60px;
     background: transparent;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 60px;
     padding: 10px 15px;
 }
 
@@ -140,5 +141,6 @@
 }
 
 .profile-image{
-    width: 30px;
+    width: 50px;
 }
+

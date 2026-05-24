@@ -15,25 +15,6 @@ interface AuthContextType{
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// export function AuthProvider({children}: {children: React.ReactNode}){
-//     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
-//     const [currentUser, setCurrentUser] = useState<UserData | null> (null);
-//     const login = (dataDariDB: UserData) => {
-//         setIsLoggedIn(true);
-//         setCurrentUser(dataDariDB);
-//     }
-//     const logout = () => {
-//         setIsLoggedIn(false);
-//         setCurrentUser(null);
-//     }
-
-//     return (
-//         <AuthContext.Provider value={{isLoggedIn, currentUser, login, logout}}>
-//             {children}
-//         </AuthContext.Provider>
-//     );
-// }
-
 export function AuthProvider({ children }: { children: React.ReactNode }) {
     const [currentUser, setCurrentUser] = useState<UserData | null>(() => {
         const savedUser = localStorage.getItem('travel_buddy_user');
